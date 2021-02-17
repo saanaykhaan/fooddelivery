@@ -1,0 +1,91 @@
+/*Css Rest*/
+*{
+    margin: 0%;
+   padding: 0%;
+ }
+ 
+ /*css verblies*/
+ :root{
+    --navbar-height:59px;
+ }
+ 
+ /*Navigations Bar*/
+ #navbar{
+     display: flex;
+     align-items: center;
+ }
+ 
+ /*Navigation Bar Logo & img*/
+ #logo{
+     margin: 3px 5px;
+ }
+ 
+ #logo img{
+         height: 70px;
+         margin 6px ;
+ }
+ 
+ 
+ /* Navigation Bar:list & styling*/
+ #navbar{
+     position: relative;
+ }
+ #navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    color: white;
+     list-style: none;
+     font-size: 1.3rem;
+  }
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding:3px 22px ;
+    border-radius: 22px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    
+  background: white;
+}
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+     padding: 3px 200px;
+     justify-content: center;
+     align-items: center;
+}
+#home::before{
+    content:"";
+    background: url('pic/b1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 85%;
+  
+    z-index: -1;
+    opacity: 0.89;
+}
+/*Utilites class*/
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    
+}
